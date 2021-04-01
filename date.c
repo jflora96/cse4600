@@ -10,6 +10,6 @@ main(int argc, char *argv[])
 		exit();
 	}
 	
-	printf(1, "day: %d/%d/%d, time: %d : %d : %d", r.month, r.day, r.year, r.hour, r.minute, r.second);
+	printf(1, "day: %d/%d/%d, time: %d : %d : %d \n", r.month, r.day, r.year, r.hour, r.minute, r.second);
 	exit();
 }

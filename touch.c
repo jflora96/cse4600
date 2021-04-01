@@ -20,11 +20,11 @@ main(int argc, char *argv[])
 		if ((file = open(argv[i], O_RDONLY)) < 0)
 		{
 			file = open(argv[i], O_CREATE|O_RDONLY);
-			printf(1, "created %d", argv[i]);
+			printf(1, "created %s\n", argv[i]);
 		}
 		else
 		{
-			printf(1, "failed to create %d", argv[i]);
+			printf(1, "failed to create %s", argv[i]);
 		}
 		close(file);
 	}
